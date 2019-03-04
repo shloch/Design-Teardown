@@ -1,0 +1,82 @@
+body {
+    box-sizing: border-box;
+}
+
+
+/********* PERSON OF THE WEEK BLOCK*********/
+
+section[id="pers-of-week"] {
+    border: 1px solid orchid;
+    line-height: calc(1.5em + .2vw);
+    font-family: 'Slabo 27px', Calibri, Georgia, serif;
+    letter-spacing: 0.056em;
+    font-size: 1.05em;
+    color: rgb(118, 118, 118);
+}
+
+#pers-of-week {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/*left*/
+
+div[class="side-txt"] {
+    border: 1px solid sandybrown;
+    width: 5%;
+    float: left;
+    /* Safari */
+    -webkit-transform: otateZ(90deg) translateX(1em) translateY(1em);
+    /* Firefox */
+    -moz-transform: otateZ(90deg) translateX(1em) translateY(1em);
+    /* IE */
+    -ms-transform: otateZ(90deg) translateX(1em) translateY(1em);
+    /* Opera */
+    -o-transform: otateZ(90deg) translateX(1em) translateY(1em);
+    transform: rotateZ(90deg) translateX(1em) translateY(1em);
+}
+
+
+/*middle*/
+
+div[class="pers-of-wk-photo"] {
+    border: 1px solid cyan;
+    float: left;
+    width: 27%;
+    padding: 2.5% 4%;
+}
+
+#pers-of-week .pers-of-wk-photo img {
+    border: 0.4em solid red;
+    border-radius: 0.4em;
+    width: 100%;
+    height: auto;
+}
+
+
+/* right */
+
+article[class="pers-of-wk-txt"] {
+    border: 1px solid tomato;
+    float: left;
+    width: 60%;
+    margin-left: 3%;
+    font-size: 1.15em;
+    padding: 2.5% 0 0 0;
+}
+
+article[class="pers-of-wk-txt"] h4 {
+    text-transform: uppercase;
+    font-family: 'Abel', sans-serif;
+    padding-bottom: 0.4em;
+    font-weight: 100;
+    letter-spacing: 0.226em;
+    color: #7A7A7A;
+}
+
+article[class="pers-of-wk-txt"] a {
+    text-decoration: underline;
+    color: rgb(118, 118, 118);
+}
