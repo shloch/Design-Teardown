@@ -258,6 +258,32 @@ section[id="red-design-ruban"] {
 
 #red-design-ruban .design-system-side {
     float: left;
-    width: 35%;
-    border: 1px solid #fff;
+    width: 25%;
+    transform: rotate(-11deg);
+    margin-left: 9%;
+    -webkit-transform: rotate(-11deg);
+    transform: rotate(-11deg);
+}
+
+.design-system-side img {
+    width: 100%;
+    margin-top: -25%;
+    max-width: 250px;
+    will-change: transform;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: rotate(-11deg);
+    transform: rotate(-11deg);
+    -webkit-transition: -webkit-transform .2s ease-out;
+    transition: transform .2s ease-out, -webkit-transform .2s ease-out;
+    -webkit-box-shadow: -12px 42px 14px -24px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -12px 42px 14px -24px rgba(0, 0, 0, 0.75);
+    box-shadow: -12px 42px 14px -24px rgba(0, 0, 0, 0.75);
+}
+
+.design-system-side img:hover {
+    transform: rotate(8deg);
+    -webkit-box-shadow: -5px -17px 0px -24px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -5px -17px 0px -24px rgba(0, 0, 0, 0.75);
+    box-shadow: -5px -17px 0px -24px rgba(0, 0, 0, 0.75);
 }
