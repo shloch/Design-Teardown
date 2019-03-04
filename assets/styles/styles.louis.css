@@ -1,6 +1,4 @@
-body {
-    box-sizing: border-box;
-}
+body {}
 
 
 /********* PERSON OF THE WEEK BLOCK*********/
@@ -59,7 +57,7 @@ div[class="pers-of-wk-photo"] {
 /* right */
 
 article[class="pers-of-wk-txt"] {
-    border: 1px solid tomato;
+    border: 1px solid #D33A2C;
     float: left;
     width: 60%;
     margin-left: 3%;
@@ -79,4 +77,114 @@ article[class="pers-of-wk-txt"] h4 {
 article[class="pers-of-wk-txt"] a {
     text-decoration: underline;
     color: rgb(118, 118, 118);
+}
+
+
+/************** left - right pair blocks ************/
+
+section[class="pair-blocks"] {
+    min-height: 20px;
+    /***eliminate floating effect***/
+    content: "";
+    clear: both;
+    display: table;
+    padding: 3% 0%;
+    font-family: Calibri, Georgia, serif;
+}
+
+div[class*="child-"] {
+    width: 50%;
+    float: left;
+}
+
+div.child-1,
+div.child-2 {
+    padding-left: 4%;
+}
+
+div.child-2 {
+    padding-right: 4%;
+}
+
+div[class*="child-"] .left-image {
+    width: 22%;
+    float: left;
+}
+
+div[class*="child-"] .left-image img {
+    border: 0.4em solid red;
+    border-radius: 0.4em;
+    width: 100%;
+    height: auto;
+}
+
+div[class*="child-"] .img-detail {
+    padding-left: 2%;
+    width: 78%;
+    float: left;
+}
+
+article.img-detail span.share {
+    font-size: 1.32em;
+}
+
+article.img-detail span a,
+article.img-detail div a {
+    color: #2da2c5;
+    text-decoration: underline;
+}
+
+article.img-detail h2 {
+    font-weight: 600;
+    font-size: 1.78em;
+    padding: 4% 0;
+    color: #333333;
+}
+
+article.img-detail h2:hover {
+    color: #D33A2C;
+}
+
+article.img-detail div {
+    color: #656565;
+    font-size: 1.1em;
+}
+
+.art-date {
+    color: #9C9C9C;
+    font-size: 0.77em;
+    letter-spacing: 0.2em;
+}
+
+
+/*************** twitter link *************/
+
+div[id="twitt-link"] {
+    color: #D33A2C;
+    padding: 3% 0;
+    text-align: center;
+}
+
+div[id="twitt-link"] span {
+    display: inline-block;
+    border-bottom-width: 2px;
+    border-bottom: 5px solid #D33A2C;
+    height: 10%;
+    ;
+}
+
+div[id="twitt-link"] a {
+    letter-spacing: 1px;
+    -webkit-transition: all .1s ease-out;
+    transition: all .1s ease-out;
+    padding: 1.25em 0 .5em;
+    cursor: pointer;
+    color: #656565;
+}
+
+div[id="twitt-link"] a:hover {
+    color: #D33A2C;
+}
+
+
 }
