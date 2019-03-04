@@ -1,0 +1,128 @@
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+nav {
+  overflow: hidden;
+}
+nav > *,
+nav > ul > li {
+  float: left;
+}
+nav > header.brand,
+nav > header.search,
+nav > ul > li {
+  height: 150px;
+}
+nav > header.brand {
+  width: 20%;
+}
+nav > header.search {
+  width: 15%;
+}
+nav > ul {
+  width: 65%;
+  overflow: hidden;
+}
+nav > ul > li {
+  width: 20%;
+  float: left;
+}
+.more > a:after,
+nav > ul > li:after,
+section.event > *:after,
+nav > header.brand:after,
+nav > header.search:after,
+section.latests > h1:after,
+section.latests > aside:after,
+section.posts > article:after,
+section.upcoming > aside:after,
+section.latests > article:after,
+section.supporters > aside:after {
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  content: "";
+  background: #ccc;
+  position: absolute;
+  border: 1px dashed #000;
+}
+section.posts,
+section.latests,
+section.upcoming,
+section.supporters {
+  overflow: hidden;
+}
+section.posts > article,
+section.latests > article,
+section.upcoming > aside,
+section.supporters > aside {
+  float: left;
+  height: 500px;
+}
+section.latests {
+  position: relative;
+}
+section.latests > h1,
+section.latests > aside {
+  top: 50px;
+  z-index: 1;
+  position: absolute;
+}
+section.latests > h1 {
+  left: 35%;
+  width: 30%;
+  height: 50px;
+}
+section.latests > aside {
+  width: 15%;
+  right: 7px;
+  height: 40px;
+}
+section.latests > article {
+  width: 50%;
+}
+section.posts > article {
+  width: 33.33%;
+}
+section.posts > article {
+  width: 33.33%;
+}
+section.upcoming > aside:first-of-type,
+section.supporters > aside:first-of-type {
+  width: 33.33%;
+}
+section.upcoming > aside:last-of-type,
+section.supporters > aside:last-of-type {
+  width: 66.66%;
+}
+.more {
+  margin: 100px 0;
+}
+.more > a {
+  width: 30%;
+  height: 50px;
+  display: block;
+  margin: 20px auto;
+}
+section.event {
+  height: 600px;
+}
+section.event > p,
+section.event > h1 {
+  width: 80%;
+  margin: 20px auto;
+}
+section.event > h1 {
+  height: 100px;
+}
+section.event > p {
+  height: 150px;
+}
+section.event > button {
+  width: 20%;
+  height: 50px;
+  display: block;
+  margin: 20px auto;
+}
