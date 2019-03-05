@@ -1,16 +1,10 @@
-/* Fabien */
-
-
 /* Using Google Fonts */
-
 @import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Maven+Pro:700|Noto+Serif+JP:200|Source+Code+Pro:700|Tangerine|Ubuntu:700');
 * {
     box-sizing: border-box;
 }
 
-
 /* Navigation */
-
 nav {
     font-size: 1.4em;
     overflow: hidden;
@@ -19,12 +13,10 @@ nav {
     background: #f5f5f5;
     font-family: "Maven Pro";
 }
-
 nav>*,
 nav>ul>li {
     float: left;
 }
-
 nav>header.brand,
 nav>header.search,
 nav>ul>li {
@@ -71,7 +63,6 @@ nav>ul>li {
 
 
 /* Group style for latest, posts and marketing section */
-
 section.posts,
 section.latest,
 section.marketing {
@@ -85,9 +76,7 @@ section.marketing>aside {
     height: 500px;
 }
 
-
 /* Latest section style */
-
 section.latest {
     position: relative;
     font-family: Ubuntu;
@@ -429,12 +418,7 @@ section.event a.explore {
     }
 }
 
-
-/* Louis */
-
-
 /********* PERSON OF THE WEEK BLOCK*********/
-
 section[id="pers-of-week"] {
     /*border: 1px solid orchid;*/
     line-height: calc(1.5em + .2vw);
