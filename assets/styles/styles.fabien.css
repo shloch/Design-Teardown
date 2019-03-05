@@ -1,7 +1,10 @@
+/* Using Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Maven+Pro:700|Noto+Serif+JP:200|Source+Code+Pro:700|Tangerine|Ubuntu:700');
 * {
   box-sizing: border-box;
 }
+
+/* Navigation */
 nav {
   font-size: 1.4em;
   overflow: hidden;
@@ -50,6 +53,8 @@ nav > ul > li {
   width: 20%;
   float: left;
 }
+
+/* Group style for latest, posts and marketing section */
 section.posts,
 section.latest,
 section.marketing {
@@ -61,6 +66,8 @@ section.marketing > aside {
   float: left;
   height: 500px;
 }
+
+/* Latest section style */
 section.latest {
   position: relative;
   font-family: Ubuntu;
@@ -126,6 +133,8 @@ section.posts > article {
   padding: 50px 20px;
   background: #f2f2f2;
 }
+
+/* Posts section style */
 section.posts > article  a {
   text-decoration: underline;
 }
@@ -147,6 +156,8 @@ section.posts > article > p:last-of-type {
   line-height: 2.5;
   font-family: "Noto Serif JP";
 }
+
+/* Marketing section style */
 section.marketing {
   padding: 40px;
   text-align: center;
@@ -206,6 +217,8 @@ section.marketing > aside:last-of-type a.explore {
   border-radius: 5px;
   border: 2px solid #222;
 }
+
+/* More div style */
 div.more {
   text-align: center;
   background: #fafafa;
@@ -218,6 +231,8 @@ div.more > a {
   display: inline-block;
   border-bottom: 3px solid #333;
 }
+
+/* Event section style */
 section.event {
   text-align: center;
   background: #f2f2f2;
@@ -257,6 +272,11 @@ section.event a.explore {
 }
 
 /* Adding Responsiveness to the page */
+@media screen and (min-width: 1300px) {
+  nav > header.brand > h1 > .logo {
+  display: none;
+}
+}
 @media screen and (max-width: 1300px) {
   nav > header.brand {
     width: 7%
@@ -268,9 +288,28 @@ section.event a.explore {
     display: none;
   }
 }
-@media screen and (min-width: 1300px) {
-    nav > header.brand > h1 > .logo {
-    display: none;
+@media screen and (max-width: 1200px) {
+  section.marketing > aside:last-of-type p {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  section.marketing {
+   padding: 0;
+  }
+  section.marketing > aside {
+   float: none;
+   width: auto;
+   margin: auto;
+  }
+  section.marketing > aside:first-of-type {
+   width: 330px;
+  }
+  section.marketing > aside:last-of-type {
+   width: 100%;
+  }
+  div.more > a {
+    margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 900px) {
@@ -306,30 +345,6 @@ section.event a.explore {
 @media screen and (max-width: 700px) {
   section.latest > aside {
     display: none;
-  }
-}
-@media screen and (max-width: 1200px) {
-  section.marketing > aside:last-of-type p {
-    padding: 20px;
-  }
-}
-@media screen and (max-width: 1050px) {
-  section.marketing {
-   padding: 0;
-  }
-  section.marketing > aside {
-   float: none;
-   width: auto;
-   margin: auto;
-  }
-  section.marketing > aside:first-of-type {
-   width: 330px;
-  }
-  section.marketing > aside:last-of-type {
-   width: 100%;
-  }
-  div.more > a {
-    margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 420px) {
