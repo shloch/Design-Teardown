@@ -7,3 +7,5 @@ This project is part of [Microverse](https://www.microverse.org/) learning path.
   - Fabien RAKOTOMAMPIANDRA _https://github.com/FabienNeibaf_
 ## Live demo
 The live demo is available at: 
+
+https://raw.githack.com/FabienNeibaf/Design-Teardown/develop/index.html
