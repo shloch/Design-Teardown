@@ -164,12 +164,12 @@ section.posts>article a {
     text-decoration: underline;
 }
 
-section.posts>article>h1,
+section.posts>article>h2,
 section.posts>article>p:first-of-type {
     font-family: "Source Code Pro";
 }
 
-section.posts>article>h1 {
+section.posts>article>h2 {
     margin: 20px 0;
     font-size: 1.5em;
     text-decoration: underline;
@@ -210,10 +210,10 @@ section.marketing>aside:first-of-type p:first-of-type {
     margin: 0 0 20px;
 }
 
-section.marketing>aside:first-of-type button {
-    display: block;
-    padding: 5px 20px;
+section.marketing>aside:first-of-type span[role=button] {
+    padding: 5px 10px;
     border-radius: 5px;
+    display: inline-block;
     margin: 20px auto 0 auto;
     border: 2px solid #000;
 }
