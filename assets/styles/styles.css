@@ -1,363 +1,438 @@
 /* Fabien */
+
+
 /* Using Google Fonts */
+
 @import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Maven+Pro:700|Noto+Serif+JP:200|Source+Code+Pro:700|Tangerine|Ubuntu:700');
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 
 /* Navigation */
+
 nav {
-  font-size: 1.4em;
-  overflow: hidden;
-  text-align: center;
-  letter-spacing: -1px;
-  background: #f5f5f5;
-  font-family: "Maven Pro";
-}
-nav > *,
-nav > ul > li {
-  float: left;
-}
-nav > header.brand,
-nav > header.search,
-nav > ul > li {
-  padding: 40px 5px 50px 5px;
-}
-nav > header.brand {
-  width: 20%;
-}
-nav > header.brand > h1 {
-  position: relative;
-}
-nav > header.brand > h1 > .logo {
-  top: -0.4em;
-  font-size: 2.5em;
-  position: absolute;
-}
-nav > header.search {
-  width: 13%;
-  top: 1.3em;
-  overflow: hidden;
-  padding: 5px 10px;
-  position: relative;
-}
-nav > header.search > button {
-  padding: 5px 10px;
-  border-radius: 7px;
-  border: 2px solid #000;
-}
-nav > ul {
-  width: 65%;
-  overflow: hidden;
-}
-nav > ul > li {
-  width: 20%;
-  float: left;
+    font-size: 1.4em;
+    overflow: hidden;
+    text-align: center;
+    letter-spacing: -1px;
+    background: #f5f5f5;
+    font-family: "Maven Pro";
 }
 
+nav>*,
+nav>ul>li {
+    float: left;
+}
+
+nav>header.brand,
+nav>header.search,
+nav>ul>li {
+    padding: 40px 5px 50px 5px;
+}
+
+nav>header.brand {
+    width: 20%;
+}
+
+nav>header.brand>h1 {
+    position: relative;
+}
+
+nav>header.brand>h1>.logo {
+    top: -0.4em;
+    font-size: 2.5em;
+    position: absolute;
+}
+
+nav>header.search {
+    width: 13%;
+    top: 1.3em;
+    overflow: hidden;
+    padding: 5px 10px;
+    position: relative;
+}
+
+nav>header.search>button {
+    padding: 5px 10px;
+    border-radius: 7px;
+    border: 2px solid #000;
+}
+
+nav>ul {
+    width: 65%;
+    overflow: hidden;
+}
+
+nav>ul>li {
+    width: 20%;
+    float: left;
+}
+
+
 /* Group style for latest, posts and marketing section */
+
 section.posts,
 section.latest,
 section.marketing {
-  overflow: hidden;
+    overflow: hidden;
 }
-section.posts > article,
-section.latest > article,
-section.marketing > aside {
-  float: left;
-  height: 500px;
+
+section.posts>article,
+section.latest>article,
+section.marketing>aside {
+    float: left;
+    height: 500px;
 }
+
 
 /* Latest section style */
+
 section.latest {
-  position: relative;
-  font-family: Ubuntu;
+    position: relative;
+    font-family: Ubuntu;
 }
-section.latest > h1,
-section.latest > aside {
-  top: 30px;
-  z-index: 1;
-  position: absolute;
+
+section.latest>h1,
+section.latest>aside {
+    top: 30px;
+    z-index: 1;
+    position: absolute;
 }
-section.latest > h1 {
-  width: 100%;
-  height: 50px;
-  font-size: 2em;
-  text-align: center;
+
+section.latest>h1 {
+    width: 100%;
+    height: 50px;
+    font-size: 2em;
+    text-align: center;
 }
-section.latest > h1 > span {
-  padding: 5px 10px;
-  background: #fff;
-  display: inline-block;
+
+section.latest>h1>span {
+    padding: 5px 10px;
+    background: #fff;
+    display: inline-block;
 }
-section.latest > aside {
-  right: 7px;
+
+section.latest>aside {
+    right: 7px;
 }
-section.latest > aside > button {
-  display: block;
-  padding: 5px 10px;
-  border-radius: 5px;
-  background: #f7f7f7;
-  border: 2px solid #000;
+
+section.latest>aside>button {
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: #f7f7f7;
+    border: 2px solid #000;
 }
-section.latest > article {
-  width: 50%;
-  padding: 50px;
+
+section.latest>article {
+    width: 50%;
+    padding: 50px;
 }
-section.latest > article > a {
-  font-size: 1.5em;
+
+section.latest>article>a {
+    font-size: 1.5em;
 }
-section.latest > article > p {
-  margin-top: 20px;
-  font-size: 2.5em;
+
+section.latest>article>p {
+    margin-top: 20px;
+    font-size: 2.5em;
 }
-section.latest > article .wrote {
-  font-size: 1.5em;
-  font-family: Tangerine;
+
+section.latest>article .wrote {
+    font-size: 1.5em;
+    font-family: Tangerine;
 }
-section.latest > article:nth-of-type(1) {
-  padding-top: 150px;
-  background: #e5e5e5;
+
+section.latest>article:nth-of-type(1) {
+    padding-top: 150px;
+    background: #e5e5e5;
 }
-section.latest > article:nth-of-type(2) {
-  padding-top: 150px;
-  background: #eee;
+
+section.latest>article:nth-of-type(2) {
+    padding-top: 150px;
+    background: #eee;
 }
-section.latest > article:nth-of-type(3) {
-  background: #e2e2e2;
+
+section.latest>article:nth-of-type(3) {
+    background: #e2e2e2;
 }
-section.latest > article:nth-of-type(4) {
-  background: #e5e5e5;
+
+section.latest>article:nth-of-type(4) {
+    background: #e5e5e5;
 }
-section.posts > article {
-  width: 33.33%;
-  padding: 50px 20px;
-  background: #f2f2f2;
+
+section.posts>article {
+    width: 33.33%;
+    padding: 50px 20px;
+    background: #f2f2f2;
 }
+
 
 /* Posts section style */
-section.posts > article  a {
-  text-decoration: underline;
+
+section.posts>article a {
+    text-decoration: underline;
 }
-section.posts > article > h1,
-section.posts > article > p:first-of-type  {
-  font-family: "Source Code Pro";
+
+section.posts>article>h1,
+section.posts>article>p:first-of-type {
+    font-family: "Source Code Pro";
 }
-section.posts > article > h1 {
-  margin: 20px 0;
-  font-size: 1.5em;
-  text-decoration: underline;
+
+section.posts>article>h1 {
+    margin: 20px 0;
+    font-size: 1.5em;
+    text-decoration: underline;
 }
-section.posts > article > p:first-of-type {
-  color: #555;
-  font-size: 1.1em;
+
+section.posts>article>p:first-of-type {
+    color: #555;
+    font-size: 1.1em;
 }
-section.posts > article > p:last-of-type {
-  margin: 20px 0;
-  line-height: 2.5;
-  font-family: "Noto Serif JP";
+
+section.posts>article>p:last-of-type {
+    margin: 20px 0;
+    line-height: 2.5;
+    font-family: "Noto Serif JP";
 }
+
 
 /* Marketing section style */
+
 section.marketing {
-  padding: 40px;
-  text-align: center;
-  background: #fafafa;
+    padding: 40px;
+    text-align: center;
+    background: #fafafa;
 }
-section.marketing > aside {
-  height: auto;
-  padding: 10px;
+
+section.marketing>aside {
+    height: auto;
+    padding: 10px;
 }
-section.marketing > aside:first-of-type {
-  width: 33.33%;
-  font-size: 1.1em;
-  font-family: "Cutive Mono";
+
+section.marketing>aside:first-of-type {
+    width: 33.33%;
+    font-size: 1.1em;
+    font-family: "Cutive Mono";
 }
-section.marketing > aside:first-of-type p:first-of-type {
-  margin: 0 0 20px;
+
+section.marketing>aside:first-of-type p:first-of-type {
+    margin: 0 0 20px;
 }
-section.marketing > aside:first-of-type button {
-  display: block;
-  padding: 5px 20px;
-  border-radius: 5px;
-  margin: 20px auto 0 auto;
-  border: 2px solid #000;
+
+section.marketing>aside:first-of-type button {
+    display: block;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin: 20px auto 0 auto;
+    border: 2px solid #000;
 }
-section.marketing > aside:last-of-type {
-  width: 66.66%;
-  font-family: "Noto Serif JP";
+
+section.marketing>aside:last-of-type {
+    width: 66.66%;
+    font-family: "Noto Serif JP";
 }
-section.marketing > aside:last-of-type img {
-  width: 235px;
-  height: 264px;
+
+section.marketing>aside:last-of-type img {
+    width: 235px;
+    height: 264px;
 }
-section.marketing > aside > div {
-  border-radius: 10px;
-  padding: 0 20px 30px 20px;
+
+section.marketing>aside>div {
+    border-radius: 10px;
+    padding: 0 20px 30px 20px;
 }
-section.marketing > aside:first-of-type > div {
-  background: #eee;
+
+section.marketing>aside:first-of-type>div {
+    background: #eee;
 }
-section.marketing > aside:last-of-type > div {
-  background: #e2e2e2;
+
+section.marketing>aside:last-of-type>div {
+    background: #e2e2e2;
 }
-section.marketing > aside:last-of-type h1 {
-  font-size: 2em;
-  margin-bottom: 30px;
-  font-family: Ubuntu;
+
+section.marketing>aside:last-of-type h1 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    font-family: Ubuntu;
 }
-section.marketing > aside:last-of-type p {
-  padding: 0 150px;
-  line-height: 2.2;
+
+section.marketing>aside:last-of-type p {
+    padding: 0 150px;
+    line-height: 2.2;
 }
-section.marketing > aside:last-of-type a.explore {
-  width: 200px;
-  display: block;
-  padding: 10px 0;
-  margin: 20px auto;
-  border-radius: 5px;
-  border: 2px solid #222;
+
+section.marketing>aside:last-of-type a.explore {
+    width: 200px;
+    display: block;
+    padding: 10px 0;
+    margin: 20px auto;
+    border-radius: 5px;
+    border: 2px solid #222;
 }
+
 
 /* More div style */
+
 div.more {
-  text-align: center;
-  background: #fafafa;
-  text-transform: uppercase;
-  font-family: "Noto Serif JP";
+    text-align: center;
+    background: #fafafa;
+    text-transform: uppercase;
+    font-family: "Noto Serif JP";
 }
-div.more > a {
-  padding: 10px;
-  margin: 30px 0 100px 0;
-  display: inline-block;
-  border-bottom: 3px solid #333;
+
+div.more>a {
+    padding: 10px;
+    margin: 30px 0 100px 0;
+    display: inline-block;
+    border-bottom: 3px solid #333;
 }
+
 
 /* Event section style */
+
 section.event {
-  text-align: center;
-  background: #f2f2f2;
-  font-family: "Noto Serif JP";
-  border-top: 1px solid transparent;
+    text-align: center;
+    background: #f2f2f2;
+    font-family: "Noto Serif JP";
+    border-top: 1px solid transparent;
 }
-section.event > h1 {
-  margin: 50px 0;
+
+section.event>h1 {
+    margin: 50px 0;
 }
-section.event > h1 > a {
-  font-size: 2.5em;
-  font-family: "Maven Pro";
+
+section.event>h1>a {
+    font-size: 2.5em;
+    font-family: "Maven Pro";
 }
-section.event > p {
-  width: 60%;
-  line-height: 2;
-  font-weight: 900;
-  font-size: 1.2em;
-  margin: 20px auto;
+
+section.event>p {
+    width: 60%;
+    line-height: 2;
+    font-weight: 900;
+    font-size: 1.2em;
+    margin: 20px auto;
 }
+
 section.event .up {
-  display: block;
-  font-size: 1.1em;
-  font-weight: 900;
-  margin-bottom: 30px;
-  text-transform: uppercase;
+    display: block;
+    font-size: 1.1em;
+    font-weight: 900;
+    margin-bottom: 30px;
+    text-transform: uppercase;
 }
+
 section.event a.explore {
-  width: 420px;
-  padding: 10px;
-  display: block;
-  font-size: 1.5em;
-  border-radius: 5px;
-  font-family: "Maven Pro";
-  border: 2px solid #333;
-  margin: 40px auto 20px auto;
+    width: 420px;
+    padding: 10px;
+    display: block;
+    font-size: 1.5em;
+    border-radius: 5px;
+    font-family: "Maven Pro";
+    border: 2px solid #333;
+    margin: 40px auto 20px auto;
 }
+
 
 /* Adding Responsiveness to the page */
+
 @media screen and (min-width: 1300px) {
-  nav > header.brand > h1 > .logo {
-  display: none;
-}
-}
-@media screen and (max-width: 1300px) {
-  nav > header.brand {
-    width: 7%
-  }
-  nav > ul {
-    width: 80%;
-  }
-  nav > header.brand > h1 > .title {
-    display: none;
-  }
-}
-@media screen and (max-width: 1200px) {
-  section.marketing > aside:last-of-type p {
-    padding: 20px;
-  }
-}
-@media screen and (max-width: 1050px) {
-  section.marketing {
-   padding: 0;
-  }
-  section.marketing > aside {
-   float: none;
-   width: auto;
-   margin: auto;
-  }
-  section.marketing > aside:first-of-type {
-   width: 330px;
-  }
-  section.marketing > aside:last-of-type {
-   width: 100%;
-  }
-  div.more > a {
-    margin-bottom: 50px;
-  }
-}
-@media screen and (max-width: 900px) {
-  nav > ul {
-    display: none;
-  }
-  nav > header.brand,
-  nav > header.search {
-    width: auto;
-  }
-  nav > header.search {
-    top: 18px;
-    width: auto;
-    float: right;
-    margin: 0 20px;
-  }
-  nav > header.brand > h1 > .logo {
-    top: -32px;
-    margin: 0 20px;
-  }
-  section.event > p {
-    width: 90%;
-  }
-}
-@media screen and (max-width: 750px) {
-  section.posts > article,
-  section.latest > article,
-  section.marketing > aside {
-    width: 100%;
-    float: none;
-  }
-}
-@media screen and (max-width: 700px) {
-  section.latest > aside {
-    display: none;
-  }
-}
-@media screen and (max-width: 420px) {
-  section.event a.explore {
-    width: auto;
-    font-size: 1em;
-    margin: 20px 10px;
-    border-radius: 5px;
-  }
+    nav>header.brand>h1>.logo {
+        display: none;
+    }
 }
 
+@media screen and (max-width: 1300px) {
+    nav>header.brand {
+        width: 7%
+    }
+    nav>ul {
+        width: 80%;
+    }
+    nav>header.brand>h1>.title {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    section.marketing>aside:last-of-type p {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    section.marketing {
+        padding: 0;
+    }
+    section.marketing>aside {
+        float: none;
+        width: auto;
+        margin: auto;
+    }
+    section.marketing>aside:first-of-type {
+        width: 330px;
+    }
+    section.marketing>aside:last-of-type {
+        width: 100%;
+    }
+    div.more>a {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    nav>ul {
+        display: none;
+    }
+    nav>header.brand,
+    nav>header.search {
+        width: auto;
+    }
+    nav>header.search {
+        top: 18px;
+        width: auto;
+        float: right;
+        margin: 0 20px;
+    }
+    nav>header.brand>h1>.logo {
+        top: -32px;
+        margin: 0 20px;
+    }
+    section.event>p {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    section.posts>article,
+    section.latest>article,
+    section.marketing>aside {
+        width: 100%;
+        float: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    section.latest>aside {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    section.event a.explore {
+        width: auto;
+        font-size: 1em;
+        margin: 20px 10px;
+        border-radius: 5px;
+    }
+}
+
+
 /* Louis */
+
+
 /********* PERSON OF THE WEEK BLOCK*********/
 
 section[id="pers-of-week"] {
@@ -556,13 +631,20 @@ article.img-detail div {
 
 /*************** twitter link *************/
 
-div[id="twitt-link"] {
+div[id="twitt-link"],
+div[id="twitt-link2"] {
     color: #D33A2C;
     padding: 3% 0;
     text-align: center;
 }
 
-div[id="twitt-link"] span {
+div[id="twitt-link2"] {
+    background: #F6F3F2;
+    padding: 5% 0;
+}
+
+div[id="twitt-link"] span,
+div[id="twitt-link2"] span {
     display: inline-block;
     border-bottom-width: 2px;
     border-bottom: 5px solid #D33A2C;
@@ -570,7 +652,8 @@ div[id="twitt-link"] span {
     ;
 }
 
-div[id="twitt-link"] a {
+div[id="twitt-link"] a,
+div[id="twitt-link2"] a {
     letter-spacing: 1px;
     -webkit-transition: all .1s ease-out;
     transition: all .1s ease-out;
@@ -579,7 +662,8 @@ div[id="twitt-link"] a {
     color: #656565;
 }
 
-div[id="twitt-link"] a:hover {
+div[id="twitt-link"] a:hover,
+div[id="twitt-link2"] a:hover {
     color: #D33A2C;
 }
 
@@ -678,7 +762,308 @@ section[id="red-design-ruban"] {
 
 .design-system-side img:hover {
     transform: rotate(8deg);
+    -webkit-transition: -webkit-transform .2s ease-out;
     -webkit-box-shadow: -5px -17px 0px -24px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -5px -17px 0px -24px rgba(0, 0, 0, 0.75);
     box-shadow: -5px -17px 0px -24px rgba(0, 0, 0, 0.75);
+}
+
+
+/******* GUIDES ************/
+
+section[id="guides"] {
+    /***eliminate floating effect***/
+    content: "";
+    clear: both;
+    display: table;
+    /*border: 1px solid fuchsia;*/
+    width: 100%;
+    padding: 2% 3% 2% 4%;
+    background: #F6F3F2;
+}
+
+div[class*="guide-1-"],
+#newsletter-section .guide {
+    width: 33%;
+    /*border: 1px solid greenyellow;*/
+    min-height: 200px;
+    float: left;
+    padding: 2%;
+    /* preparing for transition*/
+    will-change: transform;
+    -webkit-transition: -webkit-transform .2s ease-out;
+}
+
+div[class*="guide-1-"]:hover,
+#newsletter-section .guide:hover {
+    -webkit-box-shadow: 0px -2px 40px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px -2px 40px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px -2px 40px -6px rgba(0, 0, 0, 0.75);
+    background: #fff;
+    width: 33.33%;
+}
+
+div[class*="guide-1-"] h2,
+#newsletter-section .guide h2 {
+    font-weight: 800;
+    font-size: 1.78em;
+    padding: 4% 0;
+    color: #333333;
+    font-family: 'Hind Guntur', sans-serif;
+}
+
+div[class*="guide-1-"] h5,
+#newsletter-section h5 {
+    color: #7A7A7A;
+    font-size: 0.698em;
+    letter-spacing: 0.12em;
+}
+
+div[class*="guide-1-"] .bullet-links,
+#newsletter-section .bullet-links {
+    padding-left: 10%;
+}
+
+div[class*="guide-1-"] .bullet-links ul a,
+#newsletter-section .bullet-links ul a {
+    font-size: calc(1.15em + .2vw);
+    color: #006fc6;
+    text-decoration: underline;
+    font-family: Calibri, Georgia, serif;
+    font-weight: lighter;
+    letter-spacing: 0.042em;
+    font-weight: lighter;
+}
+
+div[class*="guide-1-"] .bullet-links ul,
+#newsletter-section .bullet-links ul {
+    list-style: none;
+    padding-left: calc(1.4em + .7vw);
+    list-style-image: url(https://www.smashingmagazine.com/images/bullet.svg)
+}
+
+div[class*="guide-1-"] .bullet-links ul li,
+#newsletter-section .bullet-links ul li {
+    margin-bottom: .5em;
+    padding-left: .25em;
+    line-height: 1.5em;
+}
+
+
+/******** NEWS LETTER PORTION *************/
+
+section[id="newsletter-section"] {
+    width: 100%;
+    padding: 2% 3% 2% 4%;
+    background: #F6F3F2;
+    /***eliminate floating effect***/
+    content: "";
+    clear: both;
+    display: table;
+}
+
+section[id="newsletter-section"] .guide {
+    float: left;
+}
+
+
+/***newsletter***/
+
+section[id="newsletter-section"] .newsletter {
+    float: left;
+    width: 66%;
+    text-align: center;
+    background: #D33A2C;
+    min-height: 30px;
+    padding: 2% 3% 2% 4%;
+    color: #fff;
+    border-radius: 1em;
+    -o-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -mox-border-radius: 1em;
+}
+
+section[id="newsletter-section"] .newsletter h2 {
+    font-size: 1.79em;
+    font-weight: 600;
+    display: inline-block;
+    margin: 3% 0;
+    border-bottom: 4px solid #e58980;
+    font-family: 'Hind Guntur', sans-serif;
+}
+
+section[id="newsletter-section"] .newsletter p.upper-newsletter {
+    font-size: 1.13em;
+    letter-spacing: 0.12em;
+    font-family: 'Lato', sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .15);
+    font-weight: 100;
+    line-height: 1.4em;
+}
+
+section[id="newsletter-section"] .newsletter img {
+    width: 60%;
+    height: auto;
+}
+
+.newsletter .button {
+    border: 1px solid wheat;
+    width: 50%;
+    background-color: #fff;
+    margin: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 15px;
+    -o-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -mox-border-radius: 15px;
+    color: #656565;
+    /***eliminate floating effect***/
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.newsletter .button .button-1-1 {
+    width: 60%;
+    float: left;
+    text-align: left;
+    border-right: 1px solid #656565;
+    padding: 2% 1% 2% 2%;
+}
+
+.newsletter .button .button-1-2 {
+    width: 40%;
+    float: left;
+    text-align: right;
+    font-family: 'Hind Guntur', sans-serif;
+    font-size: 1.1em;
+    font-weight: 900;
+    color: #3775b6;
+    padding: 2% 2% 2% 5%;
+}
+
+.newsletter p.lower-newsletter {
+    font-size: 0.899em;
+    font-family: 'Lato', sans-serif;
+    color: #F5D0CC;
+}
+
+.newsletter p.lower-newsletter span {
+    display: inline-block;
+    border-bottom: 0.15em solid #e58980;
+}
+
+
+/************* see all articles **************************/
+
+.see-all-art {
+    background: #F6F3F2;
+}
+
+
+/*************FOOTER **********************/
+
+footer[id="footer"] {
+    text-align: center;
+    background: #D33A2C;
+    padding: 5% 4%;
+    font-size: .8em;
+    color: #F5D0CC;
+}
+
+div[class="bottom-links"] {
+    padding-top: 2%;
+}
+
+footer[id="footer"] .bottom-links ul {
+    padding-left: calc(1.4em + .7vw);
+    list-style-image: url(https://www.smashingmagazine.com/images/bullet.svg)
+}
+
+footer[id="footer"] .bottom-links ul li {
+    display: inline-block;
+    padding-left: 0;
+    color: #fff;
+    margin: 0.25em 0;
+    padding: 0 2%;
+    /*border: 1px solid white;*/
+    -webkit-transition: color .2s ease-out;
+    transition: color .2s ease-out;
+    font-size: calc(1.3em + .2vw);
+}
+
+footer[id="footer"] .bottom-links ul li a:hover {
+    color: #656565;
+}
+
+.header__topics__item a {
+    background: 0 0;
+    text-shadow: none;
+    color: inherit;
+    font-family: 'Abel', sans-serif;
+}
+
+
+/************ BIRD + CAT BOTTOM sECTION *******/
+
+section[class="bottom"] {
+    padding-top: 3%;
+    width: 100%;
+    /***eliminate floating effect***/
+    content: "";
+    clear: both;
+    display: table;
+    color: #F5D0CC;
+}
+
+.bird,
+.cat {
+    width: 25%;
+    float: left;
+}
+
+.bird img,
+.cat img {
+    width: 75%;
+    height: 13em;
+    vertical-align: middle;
+    padding: auto;
+}
+
+.undersea-txt {
+    width: 50%;
+    float: left;
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    font-weight: 100;
+}
+
+.undersea-txt ul {
+    padding-left: calc(1.4em + .7vw);
+    list-style-image: url(https://www.smashingmagazine.com/images/bullet.svg)
+}
+
+.undersea-txt ul li {
+    display: inline-block;
+    padding-left: 0;
+    color: #fff;
+    margin: 0.25em 0;
+    padding: 0 2%;
+    /*border: 1px solid white;*/
+    -webkit-transition: color .2s ease-out;
+    transition: color .2s ease-out;
+    font-size: calc(1.3em + .2vw);
+}
+
+.undersea-txt a {
+    background: 0 0;
+    text-shadow: none;
+    color: #F5D0CC;
+    font-family: 'Abel', sans-serif;
+    font-size: 0.7em;
+    text-decoration: underline;
+    font-weight: 100;
 }
