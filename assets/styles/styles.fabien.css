@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Maven+Pro:700|Tangerine|Ubuntu:700');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:700|Noto+Serif+JP:200|Source+Code+Pro:700|Tangerine|Ubuntu:700');
 * {
   box-sizing: border-box;
 }
@@ -74,8 +74,7 @@ section.latests > aside {
   position: absolute;
 }
 section.latests > h1 {
-  left: 35%;
-  width: 30%;
+  width: 100%;
   height: 50px;
   font-size: 2em;
   text-align: center;
@@ -126,7 +125,29 @@ section.latests > article:nth-of-type(4) {
 }
 section.posts > article {
   width: 33.33%;
+  padding: 50px 20px;
   background: #f2f2f2;
+}
+section.posts > article  a {
+  text-decoration: underline;
+}
+section.posts > article > h1,
+section.posts > article > p:first-of-type  {
+  font-family: "Source Code Pro";
+}
+section.posts > article > h1 {
+  margin: 20px 0;
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+section.posts > article > p:first-of-type {
+  color: #555;
+  font-size: 1.1em;
+}
+section.posts > article > p:last-of-type {
+  margin: 20px 0;
+  line-height: 2.5;
+  font-family: "Noto Serif JP";
 }
 section.upcoming > aside:first-of-type,
 section.supporters > aside:first-of-type {
@@ -207,5 +228,10 @@ section.event > button {
   section.supporters > aside {
     width: 100%;
     float: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  section.latests > aside {
+    display: none;
   }
 }
