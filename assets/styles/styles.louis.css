@@ -1,0 +1,289 @@
+body {}
+
+
+/********* PERSON OF THE WEEK BLOCK*********/
+
+section[id="pers-of-week"] {
+    border: 1px solid orchid;
+    line-height: calc(1.5em + .2vw);
+    font-family: 'Slabo 27px', Calibri, Georgia, serif;
+    letter-spacing: 0.056em;
+    font-size: 1.05em;
+    color: rgb(118, 118, 118);
+}
+
+#pers-of-week {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/*left*/
+
+div[class="side-txt"] {
+    border: 1px solid sandybrown;
+    width: 5%;
+    float: left;
+    /* Safari */
+    -webkit-transform: otateZ(90deg) translateX(1em) translateY(1em);
+    /* Firefox */
+    -moz-transform: otateZ(90deg) translateX(1em) translateY(1em);
+    /* IE */
+    -ms-transform: otateZ(90deg) translateX(1em) translateY(1em);
+    /* Opera */
+    -o-transform: otateZ(90deg) translateX(1em) translateY(1em);
+    transform: rotateZ(90deg) translateX(1em) translateY(1em);
+}
+
+
+/*middle*/
+
+div[class="pers-of-wk-photo"] {
+    border: 1px solid cyan;
+    float: left;
+    width: 27%;
+    padding: 2.5% 4%;
+}
+
+#pers-of-week .pers-of-wk-photo img {
+    border: 0.4em solid red;
+    border-radius: 0.4em;
+    width: 100%;
+    height: auto;
+}
+
+
+/* right */
+
+article[class="pers-of-wk-txt"] {
+    border: 1px solid #D33A2C;
+    float: left;
+    width: 60%;
+    margin-left: 3%;
+    font-size: 1.15em;
+    padding: 2.5% 0 0 0;
+}
+
+article[class="pers-of-wk-txt"] h4 {
+    text-transform: uppercase;
+    font-family: 'Abel', sans-serif;
+    padding-bottom: 0.4em;
+    font-weight: 100;
+    letter-spacing: 0.226em;
+    color: #7A7A7A;
+}
+
+article[class="pers-of-wk-txt"] a {
+    text-decoration: underline;
+    color: rgb(118, 118, 118);
+}
+
+
+/************** left - right pair blocks ************/
+
+section[class="pair-blocks"] {
+    min-height: 20px;
+    /***eliminate floating effect***/
+    content: "";
+    clear: both;
+    display: table;
+    padding: 3% 0%;
+    font-family: Calibri, Georgia, serif;
+}
+
+div[class*="child-"] {
+    width: 50%;
+    float: left;
+}
+
+div.child-1,
+div.child-2 {
+    padding-left: 4%;
+}
+
+div.child-2 {
+    padding-right: 4%;
+}
+
+div[class*="child-"] .left-image {
+    width: 22%;
+    float: left;
+}
+
+div[class*="child-"] .left-image img {
+    border: 0.4em solid red;
+    border-radius: 0.4em;
+    width: 100%;
+    height: auto;
+}
+
+div[class*="child-"] .img-detail {
+    padding-left: 2%;
+    width: 78%;
+    float: left;
+}
+
+article.img-detail span.share {
+    font-size: 1.32em;
+}
+
+article.img-detail span a,
+article.img-detail div a {
+    color: #2da2c5;
+    text-decoration: underline;
+}
+
+article.img-detail h2 {
+    font-weight: 600;
+    font-size: 1.78em;
+    padding: 4% 0;
+    color: #333333;
+    font-family: 'Hind Guntur', sans-serif;
+}
+
+article.img-detail h2:hover {
+    color: #D33A2C;
+}
+
+article.img-detail div {
+    color: #656565;
+    font-size: 1.1em;
+}
+
+.art-date {
+    color: #9C9C9C;
+    font-size: 0.77em;
+    letter-spacing: 0.2em;
+}
+
+
+/*************** twitter link *************/
+
+div[id="twitt-link"] {
+    color: #D33A2C;
+    padding: 3% 0;
+    text-align: center;
+}
+
+div[id="twitt-link"] span {
+    display: inline-block;
+    border-bottom-width: 2px;
+    border-bottom: 5px solid #D33A2C;
+    height: 10%;
+    ;
+}
+
+div[id="twitt-link"] a {
+    letter-spacing: 1px;
+    -webkit-transition: all .1s ease-out;
+    transition: all .1s ease-out;
+    padding: 1.25em 0 .5em;
+    cursor: pointer;
+    color: #656565;
+}
+
+div[id="twitt-link"] a:hover {
+    color: #D33A2C;
+}
+
+
+/**************  RED RUBAN DESIGN ******************/
+
+section[id="red-design-ruban"] {
+    background: #D33A2C;
+    min-height: 30px;
+    padding: 2% 3% 2% 4%;
+    color: #fff;
+    /***eliminate floating effect***/
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#red-design-ruban .design-system {
+    float: left;
+    width: 65%;
+    /*border: 1px solid #fff;*/
+}
+
+#red-design-ruban .design-system h5 {
+    font-size: 0.89em;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+#red-design-ruban .design-system h2 {
+    font-size: 1.79em;
+    font-weight: 600;
+    font-size: 1.78em;
+    display: inline-block;
+    margin: 3% 0;
+    border-bottom: 4px solid #e58980;
+    font-family: 'Hind Guntur', sans-serif;
+}
+
+#red-design-ruban .design-system p {
+    font-size: 1.13em;
+    letter-spacing: 0.12em;
+    font-family: 'Lato', sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .15);
+    font-weight: 100;
+    line-height: 1.4em;
+}
+
+.design-system p strong {
+    font-weight: 900;
+}
+
+#red-design-ruban .design-system a.tbl-contents {
+    display: inline-block;
+    height: 15%;
+    padding: 2% 3%;
+    background: white;
+    font-family: 'Hind Guntur', sans-serif;
+    font-size: 1.58em;
+    font-weight: 600;
+    color: #3775b6;
+    border-radius: 15px;
+    -o-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -mox-border-radius: 15px;
+    margin-top: 1.9em;
+}
+
+.design-system a.tbl-contents:hover {
+    color: #D33A2C;
+}
+
+#red-design-ruban .design-system-side {
+    float: left;
+    width: 25%;
+    transform: rotate(-11deg);
+    margin-left: 9%;
+    -webkit-transform: rotate(-11deg);
+    transform: rotate(-11deg);
+}
+
+.design-system-side img {
+    width: 100%;
+    margin-top: -25%;
+    max-width: 250px;
+    will-change: transform;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: rotate(-11deg);
+    transform: rotate(-11deg);
+    -webkit-transition: -webkit-transform .2s ease-out;
+    transition: transform .2s ease-out, -webkit-transform .2s ease-out;
+    -webkit-box-shadow: -12px 42px 14px -24px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -12px 42px 14px -24px rgba(0, 0, 0, 0.75);
+    box-shadow: -12px 42px 14px -24px rgba(0, 0, 0, 0.75);
+}
+
+.design-system-side img:hover {
+    transform: rotate(8deg);
+    -webkit-box-shadow: -5px -17px 0px -24px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -5px -17px 0px -24px rgba(0, 0, 0, 0.75);
+    box-shadow: -5px -17px 0px -24px rgba(0, 0, 0, 0.75);
+}
