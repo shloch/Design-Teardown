@@ -218,7 +218,7 @@ section.marketing>aside:first-of-type p:first-of-type {
     margin: 0 0 20px;
 }
 
-section.marketing>aside:first-of-type span[role=button] {
+section.marketing>aside:first-of-type span.button {
     padding: 5px 10px;
     border-radius: 5px;
     display: inline-block;
