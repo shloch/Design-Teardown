@@ -199,13 +199,20 @@ article.img-detail div {
 
 /*************** twitter link *************/
 
-div[id="twitt-link"] {
+div[id="twitt-link"],
+div[id="twitt-link2"] {
     color: #D33A2C;
     padding: 3% 0;
     text-align: center;
 }
 
-div[id="twitt-link"] span {
+div[id="twitt-link2"] {
+    background: #F6F3F2;
+    padding: 5% 0;
+}
+
+div[id="twitt-link"] span,
+div[id="twitt-link2"] span {
     display: inline-block;
     border-bottom-width: 2px;
     border-bottom: 5px solid #D33A2C;
@@ -213,7 +220,8 @@ div[id="twitt-link"] span {
     ;
 }
 
-div[id="twitt-link"] a {
+div[id="twitt-link"] a,
+div[id="twitt-link2"] a {
     letter-spacing: 1px;
     -webkit-transition: all .1s ease-out;
     transition: all .1s ease-out;
@@ -222,7 +230,8 @@ div[id="twitt-link"] a {
     color: #656565;
 }
 
-div[id="twitt-link"] a:hover {
+div[id="twitt-link"] a:hover,
+div[id="twitt-link2"] a:hover {
     color: #D33A2C;
 }
 
@@ -321,7 +330,200 @@ section[id="red-design-ruban"] {
 
 .design-system-side img:hover {
     transform: rotate(8deg);
+    -webkit-transition: -webkit-transform .2s ease-out;
     -webkit-box-shadow: -5px -17px 0px -24px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -5px -17px 0px -24px rgba(0, 0, 0, 0.75);
     box-shadow: -5px -17px 0px -24px rgba(0, 0, 0, 0.75);
+}
+
+
+/******* GUIDES ************/
+
+section[id="guides"] {
+    /***eliminate floating effect***/
+    content: "";
+    clear: both;
+    display: table;
+    /*border: 1px solid fuchsia;*/
+    width: 100%;
+    padding: 2% 3% 2% 4%;
+    background: #F6F3F2;
+}
+
+div[class*="guide-1-"],
+#newsletter-section .guide {
+    width: 33%;
+    /*border: 1px solid greenyellow;*/
+    min-height: 200px;
+    float: left;
+    padding: 2%;
+    /* preparing for transition*/
+    will-change: transform;
+    -webkit-transition: -webkit-transform .2s ease-out;
+}
+
+div[class*="guide-1-"]:hover,
+#newsletter-section .guide:hover {
+    -webkit-box-shadow: 0px -2px 40px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px -2px 40px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px -2px 40px -6px rgba(0, 0, 0, 0.75);
+    background: #fff;
+    width: 33.33%;
+}
+
+div[class*="guide-1-"] h2,
+#newsletter-section .guide h2 {
+    font-weight: 800;
+    font-size: 1.78em;
+    padding: 4% 0;
+    color: #333333;
+    font-family: 'Hind Guntur', sans-serif;
+}
+
+div[class*="guide-1-"] h5,
+#newsletter-section h5 {
+    color: #7A7A7A;
+    font-size: 0.698em;
+    letter-spacing: 0.12em;
+}
+
+div[class*="guide-1-"] .bullet-links,
+#newsletter-section .bullet-links {
+    padding-left: 10%;
+}
+
+div[class*="guide-1-"] .bullet-links ul a,
+#newsletter-section .bullet-links ul a {
+    font-size: calc(1.15em + .2vw);
+    color: #006fc6;
+    text-decoration: underline;
+    font-family: Calibri, Georgia, serif;
+    font-weight: lighter;
+    letter-spacing: 0.042em;
+    font-weight: lighter;
+}
+
+div[class*="guide-1-"] .bullet-links ul,
+#newsletter-section .bullet-links ul {
+    list-style: none;
+    padding-left: calc(1.4em + .7vw);
+    list-style-image: url(https://www.smashingmagazine.com/images/bullet.svg)
+}
+
+div[class*="guide-1-"] .bullet-links ul li,
+#newsletter-section .bullet-links ul li {
+    margin-bottom: .5em;
+    padding-left: .25em;
+    line-height: 1.5em;
+}
+
+
+/******** NEWS LETTER PORTION *************/
+
+section[id="newsletter-section"] {
+    width: 100%;
+    padding: 2% 3% 2% 4%;
+    background: #F6F3F2;
+    /***eliminate floating effect***/
+    content: "";
+    clear: both;
+    display: table;
+}
+
+section[id="newsletter-section"] .guide {
+    float: left;
+}
+
+
+/***newsletter***/
+
+section[id="newsletter-section"] .newsletter {
+    float: left;
+    width: 66%;
+    text-align: center;
+    background: #D33A2C;
+    min-height: 30px;
+    padding: 2% 3% 2% 4%;
+    color: #fff;
+    border-radius: 1em;
+    -o-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -mox-border-radius: 1em;
+}
+
+section[id="newsletter-section"] .newsletter h2 {
+    font-size: 1.79em;
+    font-weight: 600;
+    display: inline-block;
+    margin: 3% 0;
+    border-bottom: 4px solid #e58980;
+    font-family: 'Hind Guntur', sans-serif;
+}
+
+section[id="newsletter-section"] .newsletter p.upper-newsletter {
+    font-size: 1.13em;
+    letter-spacing: 0.12em;
+    font-family: 'Lato', sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .15);
+    font-weight: 100;
+    line-height: 1.4em;
+}
+
+section[id="newsletter-section"] .newsletter img {
+    width: 60%;
+    height: auto;
+}
+
+.newsletter .button {
+    border: 1px solid wheat;
+    width: 50%;
+    background-color: #fff;
+    margin: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 15px;
+    -o-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -mox-border-radius: 15px;
+    color: #656565;
+    /***eliminate floating effect***/
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.newsletter .button .button-1-1 {
+    width: 60%;
+    float: left;
+    text-align: left;
+    border-right: 1px solid #656565;
+    padding: 2% 1% 2% 2%;
+}
+
+.newsletter .button .button-1-2 {
+    width: 40%;
+    float: left;
+    text-align: right;
+    font-family: 'Hind Guntur', sans-serif;
+    font-size: 1.1em;
+    font-weight: 900;
+    color: #3775b6;
+    padding: 2% 2% 2% 5%;
+}
+
+.newsletter p.lower-newsletter {
+    font-size: 0.899em;
+    font-family: 'Lato', sans-serif;
+}
+
+.newsletter p.lower-newsletter span {
+    display: inline-block;
+    border-bottom: 0.15em solid #e58980;
+}
+
+
+/************* see all articles **************************/
+
+.see-all-art {
+    background: #F6F3F2;
 }
