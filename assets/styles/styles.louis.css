@@ -514,6 +514,7 @@ section[id="newsletter-section"] .newsletter img {
 .newsletter p.lower-newsletter {
     font-size: 0.899em;
     font-family: 'Lato', sans-serif;
+    color: #F5D0CC;
 }
 
 .newsletter p.lower-newsletter span {
@@ -526,4 +527,111 @@ section[id="newsletter-section"] .newsletter img {
 
 .see-all-art {
     background: #F6F3F2;
+}
+
+
+/*************FOOTER **********************/
+
+footer[id="footer"] {
+    text-align: center;
+    background: #D33A2C;
+    padding: 5% 4%;
+    font-size: .8em;
+    color: #F5D0CC;
+}
+
+div[class="bottom-links"] {
+    padding-top: 2%;
+}
+
+footer[id="footer"] .bottom-links ul {
+    padding-left: calc(1.4em + .7vw);
+    list-style-image: url(https://www.smashingmagazine.com/images/bullet.svg)
+}
+
+footer[id="footer"] .bottom-links ul li {
+    display: inline-block;
+    padding-left: 0;
+    color: #fff;
+    margin: 0.25em 0;
+    padding: 0 2%;
+    /*border: 1px solid white;*/
+    -webkit-transition: color .2s ease-out;
+    transition: color .2s ease-out;
+    font-size: calc(1.3em + .2vw);
+}
+
+footer[id="footer"] .bottom-links ul li a:hover {
+    color: #656565;
+}
+
+.header__topics__item a {
+    background: 0 0;
+    text-shadow: none;
+    color: inherit;
+    font-family: 'Abel', sans-serif;
+}
+
+
+/************ BIRD + CAT BOTTOM sECTION *******/
+
+section[class="bottom"] {
+    padding-top: 3%;
+    width: 100%;
+    /***eliminate floating effect***/
+    content: "";
+    clear: both;
+    display: table;
+    color: #F5D0CC;
+}
+
+.bird,
+.cat {
+    width: 25%;
+    float: left;
+}
+
+.bird img,
+.cat img {
+    width: 75%;
+    height: 13em;
+    vertical-align: middle;
+    padding: auto;
+}
+
+.undersea-txt {
+    width: 50%;
+    float: left;
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    font-weight: 100;
+}
+
+.undersea-txt ul {
+    padding-left: calc(1.4em + .7vw);
+    list-style-image: url(https://www.smashingmagazine.com/images/bullet.svg)
+}
+
+.undersea-txt ul li {
+    display: inline-block;
+    padding-left: 0;
+    color: #fff;
+    margin: 0.25em 0;
+    padding: 0 2%;
+    /*border: 1px solid white;*/
+    -webkit-transition: color .2s ease-out;
+    transition: color .2s ease-out;
+    font-size: calc(1.3em + .2vw);
+}
+
+.undersea-txt a {
+    background: 0 0;
+    text-shadow: none;
+    color: #F5D0CC;
+    font-family: 'Abel', sans-serif;
+    font-size: 0.7em;
+    text-decoration: underline;
+    font-weight: 100;
 }
