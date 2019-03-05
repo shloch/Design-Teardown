@@ -4,12 +4,13 @@ body {}
 /********* PERSON OF THE WEEK BLOCK*********/
 
 section[id="pers-of-week"] {
-    border: 1px solid orchid;
+    /*border: 1px solid orchid;*/
     line-height: calc(1.5em + .2vw);
     font-family: 'Slabo 27px', Calibri, Georgia, serif;
     letter-spacing: 0.056em;
     font-size: 1.05em;
     color: rgb(118, 118, 118);
+    margin-bottom: 4%;
 }
 
 #pers-of-week {
@@ -22,8 +23,9 @@ section[id="pers-of-week"] {
 /*left*/
 
 div[class="side-txt"] {
-    border: 1px solid sandybrown;
-    width: 5%;
+    /*border: 1px solid orchid;*/
+    width: 15%;
+    text-align: right;
     float: left;
     /* Safari */
     -webkit-transform: otateZ(90deg) translateX(1em) translateY(1em);
@@ -34,15 +36,19 @@ div[class="side-txt"] {
     /* Opera */
     -o-transform: otateZ(90deg) translateX(1em) translateY(1em);
     transform: rotateZ(90deg) translateX(1em) translateY(1em);
+    margin: 2em 0em 3em -3em;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.7em;
 }
 
 
 /*middle*/
 
 div[class="pers-of-wk-photo"] {
-    border: 1px solid cyan;
+    /*border: 1px solid orchid;*/
     float: left;
-    width: 27%;
+    width: 24%;
     padding: 2.5% 4%;
 }
 
@@ -51,13 +57,28 @@ div[class="pers-of-wk-photo"] {
     border-radius: 0.4em;
     width: 100%;
     height: auto;
+    /*---tilted effect + shadow ---*/
+    -webkit-transform: rotate(-11deg);
+    transform: rotate(-11deg);
+    -webkit-transition: -webkit-transform .2s ease-out;
+    transition: transform .2s ease-out, -webkit-transform .2s ease-out;
+    -webkit-box-shadow: 4px 31px 42px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 31px 42px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 31px 42px -9px rgba(0, 0, 0, 0.75);
+}
+
+#pers-of-week .pers-of-wk-photo img:hover {
+    transform: rotate(0deg);
+    -webkit-box-shadow: -5px -17px 0px -24px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -5px -17px 0px -24px rgba(0, 0, 0, 0.75);
+    box-shadow: -5px -17px 0px -24px rgba(0, 0, 0, 0.75);
 }
 
 
 /* right */
 
 article[class="pers-of-wk-txt"] {
-    border: 1px solid #D33A2C;
+    /*border: 1px solid orchid;*/
     float: left;
     width: 60%;
     margin-left: 3%;
@@ -114,8 +135,26 @@ div[class*="child-"] .left-image {
 div[class*="child-"] .left-image img {
     border: 0.4em solid red;
     border-radius: 0.4em;
-    width: 100%;
+    width: 85%;
     height: auto;
+    /* shadow + tilted effect */
+    will-change: transform;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: rotate(-11deg);
+    transform: rotate(-11deg);
+    -webkit-transition: -webkit-transform .2s ease-out;
+    transition: transform .2s ease-out, -webkit-transform .2s ease-out;
+    -webkit-box-shadow: 4px 31px 42px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 31px 42px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 31px 42px -9px rgba(0, 0, 0, 0.75);
+}
+
+div[class*="child-"] .left-image img:hover {
+    transform: rotate(0deg);
+    -webkit-box-shadow: -5px -17px 0px -24px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -5px -17px 0px -24px rgba(0, 0, 0, 0.75);
+    box-shadow: -5px -17px 0px -24px rgba(0, 0, 0, 0.75);
 }
 
 div[class*="child-"] .img-detail {
@@ -268,7 +307,6 @@ section[id="red-design-ruban"] {
 .design-system-side img {
     width: 100%;
     margin-top: -25%;
-    max-width: 250px;
     will-change: transform;
     -webkit-transform-origin: 0 100%;
     transform-origin: 0 100%;
