@@ -283,3 +283,24 @@ section.event > button {
     display: none;
   }
 }
+@media screen and (max-width: 1200px) {
+  section.marketing > aside:last-of-type p {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  section.marketing {
+   padding: 0;
+  }
+  section.marketing > aside {
+   float: none;
+   width: auto;
+   margin: auto;
+  }
+  section.marketing > aside:first-of-type {
+   width: 330px;
+  }
+  section.marketing > aside:last-of-type {
+   width: 100%;
+  }
+}
