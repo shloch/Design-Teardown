@@ -12,4 +12,4 @@ This project is part of [Microverse](https://www.microverse.org/) learning path.
 ## Live demo
 
 The live demo is available at:
-_https://raw.githack.com/FabienNeibaf/Design-Teardown/develop/index.html_
+_https://rawcdn.githack.com/FabienNeibaf/Design-Teardown/5bf10a2344d8eb156e4eff0768fe430bcbb59bb6/index.html_
