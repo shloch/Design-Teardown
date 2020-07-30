@@ -22,5 +22,10 @@ _https://rawcdn.githack.com/FabienNeibaf/Design-Teardown/5bf10a2344d8eb156e4eff0
 - Linkedin: [/in/shey-louis-chia](https://www.linkedin.com/in/shey-louis-chia)
 - Email: shloch2007@yahoo.fr
 
-## 👤 **Fabien RAKOTOMAMPIANDRA**
+### 👤 **Fabien RAKOTOMAMPIANDRA**
 - Fabien RAKOTOMAMPIANDRA _https://github.com/FabienNeibaf_
+
+## Acknowledgements
+- https://www.smashingmagazine.com/
+- https://rawcdn.githack.com
+- https://fonts.googleapis.com
